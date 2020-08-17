@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: dev
+
+---
+
+spring:
+  profiles: dev
+  application:
+    name: performance-service
+  boot:
+    admin:
+      discovery:
+        ignored-services: gateway-service
+  cloud:
+    config:
+      uri:
+      username:
+      password:
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: performance-service
+  cloud:
+    config:
+      uri:
+      username:
+      password:

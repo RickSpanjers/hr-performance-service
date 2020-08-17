@@ -1,1 +1,1 @@
-hr-performance-service
+hr-template-service
